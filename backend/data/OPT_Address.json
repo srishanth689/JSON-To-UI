@@ -1,0 +1,122 @@
+[
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e262d"
+    },
+    "Add_ID": "addr1",
+    "Add_Line1": "Street 1",
+    "Add_Line2": "Area 1",
+    "Add_City": "Hyderabad",
+    "Add_State": "TS",
+    "Add_Zip": "500081",
+    "Add_PartyID": "party1"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e262e"
+    },
+    "Add_ID": "addr2",
+    "Add_Line1": "Street 2",
+    "Add_Line2": "Area 2",
+    "Add_City": "Vijayawada",
+    "Add_State": "AP",
+    "Add_Zip": "520001",
+    "Add_PartyID": "party2"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e262f"
+    },
+    "Add_ID": "addr3",
+    "Add_Line1": "Street 3",
+    "Add_Line2": "Area 3",
+    "Add_City": "Bangalore",
+    "Add_State": "KA",
+    "Add_Zip": "560001",
+    "Add_PartyID": "party3"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2630"
+    },
+    "Add_ID": "addr4",
+    "Add_Line1": "Street 4",
+    "Add_Line2": "Area 4",
+    "Add_City": "Mumbai",
+    "Add_State": "MH",
+    "Add_Zip": "400001",
+    "Add_PartyID": "party4"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2631"
+    },
+    "Add_ID": "addr5",
+    "Add_Line1": "Street 5",
+    "Add_Line2": "Area 5",
+    "Add_City": "Chennai",
+    "Add_State": "TN",
+    "Add_Zip": "600001",
+    "Add_PartyID": "party5"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2632"
+    },
+    "Add_ID": "addr6",
+    "Add_Line1": "Street 6",
+    "Add_Line2": "Area 6",
+    "Add_City": "Kochi",
+    "Add_State": "KL",
+    "Add_Zip": "682001",
+    "Add_PartyID": "party6"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2633"
+    },
+    "Add_ID": "addr7",
+    "Add_Line1": "Street 7",
+    "Add_Line2": "Area 7",
+    "Add_City": "Ahmedabad",
+    "Add_State": "GJ",
+    "Add_Zip": "380001",
+    "Add_PartyID": "party7"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2634"
+    },
+    "Add_ID": "addr8",
+    "Add_Line1": "Street 8",
+    "Add_Line2": "Area 8",
+    "Add_City": "Jaipur",
+    "Add_State": "RJ",
+    "Add_Zip": "302001",
+    "Add_PartyID": "party8"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2635"
+    },
+    "Add_ID": "addr9",
+    "Add_Line1": "Street 9",
+    "Add_Line2": "Area 9",
+    "Add_City": "Chandigarh",
+    "Add_State": "PB",
+    "Add_Zip": "160001",
+    "Add_PartyID": "party9"
+  },
+  {
+    "_id": {
+      "$oid": "693bfcac2bf53448ec1e2636"
+    },
+    "Add_ID": "addr10",
+    "Add_Line1": "Street 10",
+    "Add_Line2": "Area 10",
+    "Add_City": "Haryana City",
+    "Add_State": "HR",
+    "Add_Zip": "121001",
+    "Add_PartyID": "party10"
+  }
+]

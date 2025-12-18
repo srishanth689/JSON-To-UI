@@ -1,0 +1,10 @@
+[{"_id":{"$oid":"693bfc9a2bf53448ec1e2623"},"PTY_ID":"party1","PTY_FirstName":"Vaishnavi","PTY_LastName":"Dandaveni","PTY_Phone":"9876543210","PTY_SSN":"SSN001"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e2624"},"PTY_ID":"party2","PTY_FirstName":"Kavya","PTY_LastName":"Gattu","PTY_Phone":"9123456780","PTY_SSN":"SSN002"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e2625"},"PTY_ID":"party3","PTY_FirstName":"Suresh","PTY_LastName":"Kumar","PTY_Phone":"9012345678","PTY_SSN":"SSN003"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e2626"},"PTY_ID":"party4","PTY_FirstName":"Anjali","PTY_LastName":"Reddy","PTY_Phone":"9988776655","PTY_SSN":"SSN004"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e2627"},"PTY_ID":"party5","PTY_FirstName":"Rohit","PTY_LastName":"Sharma","PTY_Phone":"9122334455","PTY_SSN":"SSN005"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e2628"},"PTY_ID":"party6","PTY_FirstName":"Sneha","PTY_LastName":"Patel","PTY_Phone":"9001122334","PTY_SSN":"SSN006"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e2629"},"PTY_ID":"party7","PTY_FirstName":"Vikram","PTY_LastName":"Singh","PTY_Phone":"9871234567","PTY_SSN":"SSN007"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e262a"},"PTY_ID":"party8","PTY_FirstName":"Neha","PTY_LastName":"Verma","PTY_Phone":"9123456712","PTY_SSN":"SSN008"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e262b"},"PTY_ID":"party9","PTY_FirstName":"Manoj","PTY_LastName":"Rao","PTY_Phone":"9011223344","PTY_SSN":"SSN009"},
+{"_id":{"$oid":"693bfc9a2bf53448ec1e262c"},"PTY_ID":"party10","PTY_FirstName":"Divya","PTY_LastName":"K","PTY_Phone":"9988771122","PTY_SSN":"SSN010"}]
