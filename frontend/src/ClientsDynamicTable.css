@@ -1,0 +1,11 @@
+.table-container { width: 100%; overflow-x: auto; padding: 16px; box-sizing: border-box; }
+.table-actions { display: flex; gap: 8px; margin-bottom: 12px; }
+.table-search { max-width: 260px; padding: 8px 10px; border: 1px solid #ccc; border-radius: 6px; }
+.clients-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.clients-table th, .clients-table td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+.clients-table th { background: #f7f7f7; font-weight: 600; }
+.clients-table tr:nth-child(even) { background: #fafafa; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 12px; background: #eef2ff; color: #3949ab; font-size: 12px; }
+.btn { padding: 8px 12px; border: none; border-radius: 6px; cursor: pointer; }
+.btn-refresh { background: #2563eb; color: #fff; }
+.btn-refresh:hover { background: #1d4ed8; }
