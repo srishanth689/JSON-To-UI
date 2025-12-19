@@ -1,56 +1,37 @@
-JSON-To-UI
-
-Dynamic JSON-to-UI Rendering with Full CRUD Operations
+# JSON-To-UI
+## Dynamic JSON-to-UI Rendering with Full CRUD Operations
 
 📌 Project Overview
 
-JSON-To-UI is a comprehensive full-stack data management system that converts JSON data into interactive UI components. It provides seamless CRUD (Create, Read, Update, Delete) operations with a responsive grid-based interface, enabling users to manage clients and their addresses efficiently.
+- JSON-To-UI is a comprehensive full-stack data management system that converts JSON data into interactive UI components. It provides seamless CRUD (Create, Read, Update, Delete) operations with a responsive grid-based interface, enabling users to manage clients and their addresses efficiently.
 
 Key Capability
 
-Transform raw JSON data into beautifully formatted UI tables with real-time synchronization between frontend and MongoDB backend.
+- Transform raw JSON data into beautifully formatted UI tables with real-time synchronization between frontend and MongoDB backend.
 
 ✨ Objectives & Features
 
-
-Primary Objectives
-JSON to UI Conversion - Convert JSON data into responsive grid format
-Real-Time CRUD Operations - Seamless Create, Read, Update, Delete functionality
-Data Persistence - MongoDB integration for reliable data storage
-RESTful API Architecture - Standardized backend endpoints for all operations
-Production-Ready Deployment - Cloud deployment on Render (backend) & Vercel (frontend)
+- JSON to UI Conversion - Convert JSON data into responsive grid format
+- Real-Time CRUD Operations - Seamless Create, Read, Update, Delete functionality
+- Data Persistence - MongoDB integration for reliable data storage
+- RESTful API Architecture - Standardized backend endpoints for all operations
+- Production-Ready Deployment - Cloud deployment on Render (backend) & Vercel (frontend)
 
 ✅ Key Features
 
-✅ GET Clients - Fetch all client records with addresses from MongoDB
-✅ INSERT Clients - Add new clients with multiple addresses
-✅ UPDATE Fields - Modify specific fields (cities, phone, addresses, etc.) using admin/set
-✅ DELETE Fields - Remove specific columns/fields using admin/unset
-✅ DELETE Clients - Remove entire client records
-✅ Search & Filter - Search clients by ID with live filtering
-✅ Analytics Dashboard - Display total clients, unique cities, and states covered
-✅ Responsive Design - Mobile-friendly UI with modern styling
-
-
-🧩 System Architecture
-Postman
-   |
-   |  REST API Requests
-   v
-Node.js + Express Backend
-   |
-   |  CRUD Operations
-   v
-MongoDB Atlas (Cloud)
-   |
-   |  JSON Response
-   v
-React Frontend (Grid-Based UI)
+- GET Clients - Fetch all client records with addresses from MongoDB
+- INSERT Clients - Add new clients with multiple addresses
+- UPDATE Fields - Modify specific fields (cities, phone, addresses, etc.) using admin/set
+- DELETE Fields - Remove specific columns/fields using admin/unset
+- DELETE Clients - Remove entire client records
+- Search & Filter - Search clients by ID with live filtering
+- Analytics Dashboard - Display total clients, unique cities, and states covered
+- Responsive Design - Mobile-friendly UI with modern styling
 
 
 🛠️ Tech Stack Used
 
-Dynamic JSON-to-UI Rendering with Full CRUD Operations
+- Dynamic JSON-to-UI Rendering with Full CRUD Operations
 
 | Category            | Technology   | Version       |
 | ------------------- | ------------ | ------------- |
@@ -67,27 +48,16 @@ Dynamic JSON-to-UI Rendering with Full CRUD Operations
 | Backend Deployment  | Render       | —             |
 | Version Control     | Git / GitHub | —             |
 
-
-
 📋 Prerequisites
 
 Before starting, ensure the following tools are installed:
-
-Node.js (v18.x or higher)
-
-npm (v9.x or higher – bundled with Node.js)
-
-Git
-
-Postman (for API testing)
-
-MongoDB Atlas account (Free Tier)
-
-GitHub account
-
-Vercel account (Frontend deployment)
-
-Render account (Backend deployment)
+- Node.js (v18.x or higher)
+- npm (v9.x or higher – bundled with Node.js)
+- Git
+- Postman (for API testing)
+- MongoDB Atlas account (Free Tier)
+- Vercel account (Frontend deployment)
+- Render account (Backend deployment)
 
 🌐 Production URLs
 
@@ -97,25 +67,34 @@ https://json-to-ui-4wq5hwk5j-srishanth689s-projects.vercel.app/
 Backend (Render)
 https://aspyr-backend.onrender.com
 
-📡 API Endpoints
+## Backend API
 
 Base URL
 
 https://aspyr-backend.onrender.com
 
-1️⃣ GET – Retrieve All Clients
+- `GET /clients`(Retrieve all clients from database)
+- `POST /clients`(Insert a record)
+- `DELETE /clients/Target_Record`(Target_Record = clientID)
+- `POST /admin/set`(Update one or many records at once)
+- `POST /admin/unset`(Delete all records of a particular column)
 
-GET https://aspyr-backend.onrender.com/clients
+## SAMPLE TEST CASES TO RUN
+
+### 1) GET – Retrieve All Clients
+
+- GET https://aspyr-backend.onrender.com/clients
 
 Response
+- All records from database are fetched in json format
+- Status: 200 OK ✅
 
-Status: 200 OK
+### 2) POST – Insert a record
 
-2️⃣ POST – Insert New Client
-
-POST https://aspyr-backend.onrender.com/clients
-Content-Type: application/json
-
+- POST https://aspyr-backend.onrender.com/clients
+- Content-Type: application/json
+- Body -> raw -> json
+```json
 {
   "client": {
     "PTY_ID": "TEST001",
@@ -135,80 +114,101 @@ Content-Type: application/json
     "state": null
   }]
 }
+```
+- Expected: 201 Created ✅
 
-Expected: 201 Created ✅
+- Then refresh your Vercel URL → New "John Doe" row should appear in the table
 
-Then refresh your Vercel URL → New "John Doe" row should appear in the table
+### 3) UPDATE city using clientID
 
-Test 3: UPDATE city using clientID
-
-POST https://aspyr-backend.onrender.com/admin/set
-Content-Type: application/json
-
+- POST https://aspyr-backend.onrender.com/admin/set
+- Content-Type: application/json
+- Body -> raw -> json
+```json
 {
   "collection": "OPT_Address",
   "filter": { "Add_PartyID": "TEST001" },
   "set": { "Add_City": "Pune" }
 }
+```
+- Expected: Set applied ✅
 
-Expected: Set applied ✅
+- Refresh Vercel URL → City should change from "Mumbai" to "Pune"
 
-Refresh Vercel URL → City should change from "Mumbai" to "Pune"
+### 4) DELETE client
 
-Test 4: DELETE client
+- DELETE https://aspyr-backend.onrender.com/clients/TEST001
 
-DELETE https://aspyr-backend.onrender.com/clients/TEST001
+- Expected: Delete applied ✅
 
-Expected: Delete applied ✅
+- Refresh Vercel URL → "John Doe" row should disappear
 
-Refresh Vercel URL → "John Doe" row should disappear
+### 5) To delete all records of a particular column at once
 
-Test 5: To delete all records of a particular column at once
-
-POST https://aspyr-backend.onrender.com/admin/unset
-Content-Type: application/json
-
+- POST https://aspyr-backend.onrender.com/admin/unset
+- Content-Type: application/json
+- Body -> raw -> json
+```json
 {
   "collection": "OPT_Address",
   "filter": { },
   "unset": { " "Add_City": ""}
 }
-
-Expected response:
-
+```
+- Expected response:
+```json
 {
   "message": "Unset applied",
   "matched": 1,
   "modified": 1
 }
+```
+- Then refresh Vercel URL → All fields for that address will show as "—"
 
-Then refresh Vercel URL → All fields for that address will show as "—"
+### 6) UPDATE two or many things in one instance using clientID
 
-Common Field Names
+- POST https://aspyr-backend.onrender.com/admin/set
+- Content-Type: application/json
+- Body -> raw -> json
+```json
+{
+  "collection": "OPT_Address",
+  "filter": { "Add_PartyID": {"$in": ["06","07"]} },
+  "set": { "Add_State": "TS" }
+}
+```
+- Expected: Set applied ✅
 
-Client (OPT_Party):
+- Refresh Vercel URL → States of two records having ClientID 06 and 07 changes to TS"
 
-PTY_ID - Client ID
+## Common Field Names which can be used in CRUD operations
 
-PTY_FirstName - First Name
+### Client (OPT_Party):
 
-PTY_LastName - Last Name
+`OPT_Party` - Collection Name / Table Name
 
-PTY_Phone - Phone Number
+`PTY_ID` - Client ID
 
-Address (OPT_Address):
+`PTY_FirstName` - First Name
 
-Add_ID - Address ID
+`PTY_LastName` - Last Name
 
-Add_PartyID - Links to PTY_ID
+`PTY_Phone` - Phone Number
 
-Add_Line1 - Street Address
+### Address (OPT_Address):
 
-Add_City - City
+`OPT_Address` - Collection Name / Table Name
 
-Add_State - State Code (e.g., "MH", "TS")
+`Add_ID` - Address ID
 
-Add_Zip - Postal Code
+`Add_PartyID` - Links to PTY_ID
+
+`Add_Line1` - Street Address
+
+`Add_City` - City
+
+`Add_State` - State Code (e.g., "MH", "TS")
+
 
 
 
