@@ -152,7 +152,7 @@ Response
 {
   "collection": "OPT_Address",
   "filter": { },
-  "unset": { " "Add_City": ""}
+  "unset": { "Add_City": ""}
 }
 ```
 - Expected response:
